@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <span v-bind:title="message">
+            wait
+            </span>
+        </div>
+
+        <div id="app1">
+          <p v-if="seen"> you can see </p>
+        </div>
+
+        <div id="app2">
+          <p>{{ message2 }}</p>
+          <button v-on:click="reverseM">reverse</button>
+        </div>
+
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
