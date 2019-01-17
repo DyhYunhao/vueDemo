@@ -1,5 +1,5 @@
 
-
+// basic
 var app = new Vue({
   el: "#app",
   data: {
@@ -7,6 +7,7 @@ var app = new Vue({
   }
 });
 
+// if
 var app1 = new Vue({
   el: "#app1",
   data: {
@@ -16,6 +17,7 @@ var app1 = new Vue({
 
 app1.seen = true;
 
+// function
 var app2 = new Vue({
   el: "#app2",
   data: {
@@ -26,4 +28,15 @@ var app2 = new Vue({
       this.message2 = this.message2.split('').reverse().join('')
     }
   }
+});
+
+// oop
+var obj = {
+  foo: 'abc'
+};
+Object.freeze(obj);
+
+var app3 = new Vue({
+  el: "#app3",
+  data: obj
 });
